@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athira Natasha - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito&display=swap"  rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #F1F0E8;
+      color: black; 
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+    }
+    header img {
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+   }
+    header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+   }
+    header, footer {
+      text-align: center;
+      padding: 1em;
+      font-family: 'Libre Baskerville', serif;
+      background-color: #89A8B2;
+      color: white;
+    }
+    nav {
+      background-color: #E5E1DA;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1em 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #435693;
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.1em;
+      transition: color 0.3s, background-color 0.3s;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #435693;
+      color: #F1F0E8;
+    }
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-image: url("image/background\ image\ \(athira\).png"); 
+      background-size: 550px;
+      background-position: center right;
+      background-repeat: no-repeat;
+      padding: 0 5em;
+      height: 440px;
+      position: relative;
+    }
+    .intro-text {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0;
+      text-align: center;
+      color: black;
+     transition: transform 0.3s ease;
+    }
+     .intro-text:hover {
+      transform: translateY(-5px);
+    }
+    .intro-text h2 {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      font-family: 'Libre Baskerville', serif;
+      text-align: center;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .intro-text p {
+      font-size: 1.3em;
+      line-height: 1.6;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .highlight {
+      color: white;
+      background-color: #89A8B2;
+      padding: 0.2em 0.5em;
+      font-weight: bold;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.7em 1.5em;
+      background-color: #435693;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      font-family: 'Nunito', sans-serif;
+    }
+    .cta-button:hover {
+      background-color: #2c3e7a;
+    }
+    .highlights {
+      text-align: center;
+      padding: 3em 2em;
+      font-family: 'Nunito', sans-serif;
+    }
+    .highlights h2 {
+      color: #435693;
+      font-family: 'Libre Baskerville', serif;
+    }
+    .highlights p {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+    footer {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+     <img src="C:\Users\U S E R\OneDrive - Universiti Teknologi MARA\Documents\PORTFOLIO\image\logo.jpg">
+    <h1>Athira Natasha</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section class="intro-section">
+    <div class="intro-text">
+      <h2>Hi, it’s <span style="font-family: 'Libre Baskerville', serif;">Athira</span> here!</h2>
+      <p>
+        A passionate student of <strong>Content Management,</strong> creative learner, and the one who's here to 
+        <span class="highlight">help you shine in the digital world</span>.
+      </p>
+      <a href="portfolio.html" class="cta-button">View My Portfolio</a>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <h2>What I’m Passionate About</h2>
+    <p><i class="fas fa-pen-nib"></i> &diams; Crafting structured and meaningful digital content</p>
+    <p><i class="fas fa-laptop-code"></i>	&diams; Exploring metadata, digital publishing & CMS</p>
+    <p><i class="fas fa-lightbulb"></i>	&diams; Turning information into engaging experiences</p>
+    <p>Want to know more? <a href="aboutme.html" style="color: #435693; font-weight: bold;">Visit my About page</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Athira Natasha</p>
+  </footer>
+</body>
+</html>

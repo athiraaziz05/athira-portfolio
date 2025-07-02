@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education - Athira Natasha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F1F0E8;
+      color: black;
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+    }
+     header img {
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+   }
+    header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+   }
+    header, footer {
+      text-align: center;
+      padding: 1em;
+      font-family: 'Libre Baskerville', serif;
+      background-color: #89A8B2; 
+      color: white;
+    }
+     nav {
+      background-color: #E5E1DA;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1em 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #435693;
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.1em;
+      transition: color 0.3s, background-color 0.3s;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #435693;
+      color: #F1F0E8;
+    }
+    section {
+      text-align: center;
+      padding: 2em;
+    }
+    .education {
+      background-color: #E5E1DA;
+      margin: 1em auto;
+      padding: 1em;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+    .education h3 {
+      margin-top: 0;
+      font-family: 'Libre Baskerville', serif;
+    }
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      margin: 1em auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 1em;
+    }
+
+    .carousel-buttons button {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: none;
+      color: white;
+      font-size: 2em;
+      cursor: pointer;
+      padding: 0.2em 0.5em;
+      border-radius: 50%;
+    }
+    footer {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\U S E R\OneDrive - Universiti Teknologi MARA\Documents\PORTFOLIO\image\logo.jpg">
+    <h1>Athira Natasha</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section>
+    <h2>My Education</h2>
+
+    <div class="education">
+      <h3>University of Technology Mara, Puncak Perdana Campus</h3>
+      <p><strong>Program:</strong> Bachelor of Information Management (Honours) in Content Management</p>
+      <p><strong>Year:</strong> 2024 – Present</p>
+     <div class="carousel">
+        <div class="carousel-images" id="carousel-puncak">
+          <img src="image\pundana1.jpg" alt="Puncak 1">
+          <img src="image\pundana2.jpg" alt="Puncak 2">
+          <img src="image\pundana3.jpg" alt="Puncak 3">
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide('puncak')">‹</button>
+          <button onclick="nextSlide('puncak')">›</button>
+        </div>
+      </div> 
+    </div>
+
+    <div class="education">
+      <h3>University of Technology Mara, Dengkil Campus</h3>
+      <p><strong>Program:</strong> Foundation of Teaching English as Second Language</p>
+      <p><strong>Year:</strong> 2023-2024</p> 
+      <div class="carousel">
+        <div class="carousel-images" id="carousel-dengkil">
+          <img src="image\dengkil1.jpg" alt="Dengkil 1">
+          <img src="image\dengkil2.jpg" alt="Dengkil 2">
+          <img src="image\dengkil3.JPG" alt="Dengkil 3">
+          <img src="image\dengkil4.JPG" alt="Dengkil 4">
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide('dengkil')">‹</button>
+          <button onclick="nextSlide('dengkil')">›</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="education">
+      <h3>Maktab Rendah Sains Mara Kubang Pasu, Jitra, Kedah.</h3>
+      <p><strong>Stream:</strong> Science / Arts</p>
+      <p><strong>Year:</strong> 2017 – 2022</p>
+      <div class="carousel">
+        <div class="carousel-images" id="carousel-mrsm">
+          <img src="image\kupa1.jpg" alt="MRSM 1">
+          <img src="image\kupa2.jpg" alt="MRSM 2">
+          <img src="image\kupa3.jpg" alt="MRSM 3">
+          <img src="image\kupa6.jpg" alt="MRSM 3">
+          <img src="image\kupa5.jpg" alt="MRSM 4">
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide('mrsm')">‹</button>
+          <button onclick="nextSlide('mrsm')">›</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <p>&copy; 2025 Athira Natasha</p>
+  </footer>
+   <script>
+    const indices = {
+      puncak: 0,
+      dengkil: 0,
+      mrsm: 0
+    };
+
+    function showSlide(id, index) {
+      const carousel = document.getElementById('carousel-' + id);
+      const width = carousel.clientWidth;
+      const count = carousel.children.length;
+      indices[id] = (index + count) % count;
+      carousel.style.transform = `translateX(-${indices[id] * width}px)`;
+    }
+
+    function nextSlide(id) {
+      showSlide(id, indices[id] + 1);
+    }
+
+    function prevSlide(id) {
+      showSlide(id, indices[id] - 1);
+    }
+
+    window.addEventListener('resize', () => {
+      Object.keys(indices).forEach(id => showSlide(id, indices[id]));
+    });
+
+    window.addEventListener('load', () => {
+      Object.keys(indices).forEach(id => showSlide(id, 0));
+    });
+  </script>
+</body>
+</html>
